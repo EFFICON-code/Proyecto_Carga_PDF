@@ -90,7 +90,7 @@ async def extraer_contexto(solicitud: SolicitudContexto):
         contexto_bruto = "\n\n---\n\n".join([doc.page_content for doc in docs_relevantes])
 
         # 2. Crear el prompt de síntesis
-        prompt_sinitesis = f"""
+        prompt_sintesis = f"""
         Actúa como un analista técnico experto en el PDOT de la entidad: {entidad}.
         A continuación se te proporciona un texto en bruto extraído del documento de planificación de {entidad} y una pregunta del usuario. 
         Tu tarea es sintetizar la información del texto en bruto para responder a la pregunta de forma clara y concisa.
